@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheese</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1 class="title-content">
+                Tasty cheeses
+            </h1>
+        </div>
+        <div class="add-button">
+            <a href="add.html" class="button-link">Add cheese</a>
+        </div>
+        <div class="edit-button">
+            <a href="edit.html" class="button-link">Edit</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="find-cheese">
+            <h3 class="find-title">Find cheese</h3>
+            <input id="find-input" type="text" class="form-input_find"><br>
+            <button id="find-button" type="button" class="btn find">
+             Find
+                </button>
+            <button id="clear-find-button" type="button" class="btn clear">Clear </button>
+        </div>
+        <div class="count-common-price">
+            <h3 class="count-title">Cheeses common</h3>
+            <div class="price-conatiner">
+                <h3 class="price-bottom-row"> price:</h3>
+                <h3 id="total-price" class="price-bottom-row">$</h3>
+            </div>
+        </div>
+        <div class="sort-cheeses">
+            <button id="sort-button" class="btn sort"> Sort cheeses by price</button>
+        </div>
+        </div>
+
+        <ul id="items-container" class="cheese-items">
+        </ul>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
