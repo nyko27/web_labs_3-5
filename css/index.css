@@ -1,0 +1,144 @@
+body {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Courier', sans-serif;
+    background-color: mintcream;
+    font-size: 1.5em;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    color: dimgrey;
+    font-size: 1.4em;
+}
+
+.title {
+    text-align: center;
+    color: dimgrey;
+    margin-right: 350px;
+}
+
+.add-button,
+.edit-button {
+    margin-top: 38px;
+    background-color: green;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid gainsboro;
+}
+
+.index-button {
+    width: 200px;
+    font-family: 'Courier', sans-serif;
+}
+
+.edit-button {
+    margin-left: 20px;
+    width: 85px;
+}
+
+.button-link {
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+.btn {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.find-title {
+    width: 235px;
+    border-bottom: 2px solid dimgrey;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+.form-input_find {
+    width: 230px;
+    margin-top: -100px;
+    margin-bottom: 15px;
+}
+
+.btn.find,
+.btn.clear {
+    width: 110px;
+    font-size: 0.8em;
+}
+
+.btn.clear {
+    background-color: salmon;
+}
+
+.count-common-price {
+    margin-top: 80px;
+}
+
+.price-conatiner {
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    border-bottom: 2px solid dimgrey;
+}
+
+.price-bottom-row {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.sort {
+    margin: 30px 0 0 0px;
+    width: 250px;
+    height: 40px;
+    font-size: 0.85em;
+}
+
+main {
+    display: flex;
+    width: 75%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+img {
+    background-color: wheat;
+    width: 300px;
+    border-radius: 70px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

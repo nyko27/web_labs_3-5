@@ -2,7 +2,6 @@ const titleInput = document.getElementById("title-input");
 const descriptionInput = document.getElementById("decription-input");
 const priceInput = document.getElementById("price-input")
 const itemsContainer = document.getElementById("items-container");
-const totalPrice = document.getElementById("total-price");
 
 const getItemId = (id) => `${id}`;
 
@@ -16,11 +15,15 @@ const itemTemplate = ({ id, title, desc, price }) =>
     </div>
 </li>`;
 
-export const clearInputs = () => {
-    titleInput.value = "";
-    descriptionInput.value = "";
-    priceInput.value = "";
-};
+export let cheeses = []
+
+export const checkAllInputs = () => {
+    if (titleInput.value == "" || descriptionInput.value == "" || priceInput.value == "") {
+        return false
+    } else {
+        return true
+    }
+}
 
 export const addItemToPage = ({ id, title, desc, price }) => {
     itemsContainer.insertAdjacentHTML(
