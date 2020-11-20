@@ -28,14 +28,14 @@ h3 {
     margin-right: 350px;
 }
 
-.add-button,
-.edit-button {
+.add-button {
     margin-top: 38px;
     background-color: green;
     height: 35px;
+    width: 250px;
     text-align: center;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1.35em;
     border: 1px solid gainsboro;
 }
 
@@ -71,6 +71,10 @@ input,
     text-align: center;
 }
 
+.find-cheese {
+    width: 300px;
+}
+
 .find-title {
     width: 235px;
     border-bottom: 2px solid dimgrey;
@@ -92,6 +96,11 @@ input,
 
 .btn.clear {
     background-color: salmon;
+}
+
+.count-common-price,
+.sort-cheeses {
+    width: 320px;
 }
 
 .count-common-price {
@@ -120,6 +129,7 @@ input,
 
 main {
     display: flex;
+    flex-direction: row;
     width: 75%;
 }
 
@@ -141,4 +151,96 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 3px solid gainsboro;
+    border-radius: 25px;
+    width: 350px;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-left: 250px;
+}
+
+.li-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.btn.delete {
+    width: 80px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: salmon;
+}
+
+.btn.edit {
+    width: 80px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.operations-container {
+    position: fixed;
+    display: none;
+    text-align: center;
+    background-color: rgb(182, 233, 199);
+    height: 500px;
+    top: 200px;
+    left: 600px;
+    width: 700px;
+    border-radius: 30px;
+    border: 1px solid rgb(245, 237, 237);
+}
+
+.form-cheese {
+    margin-top: 130px;
+    font-size: 1.2em;
+}
+
+.form-label {
+    color: dimgrey;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    border: none;
+    font-size: 1.1em;
+    margin-left: 5px;
+    width: 160px;
+    height: 35px;
+}
+
+.window-content {
+    display: none;
+    position: fixed;
+    left: 31.5%;
+    top: 27%;
+    width: 700px;
+    height: 350px;
+    background-color: rgb(182, 233, 199);
+    border-radius: 20px;
+    border: 1px solid rgb(245, 237, 237);
+}
+
+.window-text-content {
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 40px;
+}
+
+.window-button {
+    margin-left: 38%;
+    width: 25%;
+    height: 10%;
+    bottom: 50px;
+    background-color: green;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
 }
