@@ -1,47 +1,35 @@
 import {
     getInputs,
-    cheeses,
-    checkAllInputs
+    checkAllInputs,
+    clearInputs
 } from "./utils.js";
+
+import { postCheese } from "./api.js"
 
 
 const submitButton = document.getElementById("submit-button");
 const hideWindowButton = document.getElementById("window_button");
 
-const addCheese = ({ desc, title, price }) => {
-
-    const cheeseId = Math.floor(Math.random() * 10000);
-
-    const newCheese = {
-        id: cheeseId,
-        title,
-        desc,
-        price: price
-    };
-
-    cheeses.push(newCheese);
-
-};
 
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();
 
-    const { title, desc, price } = getInputs();
-
-    addCheese({
-        title,
-        desc,
-        price
-    });
+    let { title, description, price } = getInputs();
 
     if (checkAllInputs()) {
+        price = Number(price);
+        console.log({ title, description, price });
+        postCheese({ title, description, price });
+
         document.getElementById("window_content").style.display = "block";
+        document.getElementById("window_content").style.backgroundColor = " rgb(182, 233, 199)";
         document.getElementById("window_text_content").innerText = "Item added!";
     } else {
         document.getElementById("window_content").style.display = "block";
-        document.getElementById("window_text_content").innerText = "Input all values to add item!";
+        document.getElementById("window_content").style.backgroundColor = "LightPink";
+        document.getElementById("window_text_content").innerText = "Input all the values to add item!";
     }
-
+    clearInputs();
 });
 
 hideWindowButton.addEventListener("click", (event) => {
